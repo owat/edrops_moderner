@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ 
+ http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+ -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="Keywords" 			content="Epsilon, mobile, framework, css3, html5, javascript, retina" />
+        <meta name="Description" 		content="Epsilon based mobile retina webpp template!" />
+        <!--Favicon shortcut link-->
+        <link type="image/x-icon"  rel="shortcut icon" href="img/splash/favicon.ico" />
+        <link type="image/x-icon"  rel="icon"		   href="img/splash/favicon.ico" />
+        <!--Declare page as mobile friendly -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+        <!-- Declare page as iDevice WebApp friendly -->
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+        <link rel="apple-touch-icon" sizes="114x114" href="img/splash/splash-icon.png">
+            <link rel="apple-touch-startup-image" href="img/splash/splash-screen.png" media="screen and (max-device-width: 320px)" />
+            <link rel="apple-touch-startup-image" href="img/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" />
+            <link rel="apple-touch-startup-image" href="img/splash/splash-screen@3x.png" sizes="640x1096">
+                
+                <!-- Page Title -->
+                <title>Epsilon Framework</title>
+                
+                <!-- Stylesheet Load -->
+                <link href="css/style.css"				rel="stylesheet" 	type="text/css">
+                    <link href="css/framework-style.css" 	rel="stylesheet" 	type="text/css">
+                        <link href="css/framework.css" 			rel="stylesheet" 	type="text/css">
+                            <link href="css/icons.css"				rel="stylesheet" 	type="text/css">
+                                <link href="css/retina.css" 				rel="stylesheet" 	type="text/css" 	media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+                                
+                                <!--Page Scripts Load -->
+                                <script src="js/jquery.min.js"		type="text/javascript"></script>
+                                <script src="js/jquery-ui-min.js"  type="text/javascript"></script>
+                                <script src="js/contact.js"		type="text/javascript"></script>
+                                <script src="js/swipe.js"			type="text/javascript"></script>
+                                <script src="js/klass.min.js"		type="text/javascript"></script>
+                                <script src="js/photoswipe.js"		type="text/javascript"></script>
+                                <script src="js/colorbox.js"		type="text/javascript"></script>
+                                <script src="js/retina.js"			type="text/javascript"></script>
+                                <script src="js/modernizr.js"		type="text/javascript"></script>
+                                <script src="js/slicebox.js"		type="text/javascript"></script>
+                                <script src="js/twitter.js"		type="text/javascript"></script>
+                                <script src="js/custom.js"			type="text/javascript"></script>
+                                
+                                <script src="js/edrps.js"			type="text/javascript"></script>
+                                <style>
+                                    #cthisWrapper {
+                                        width:100%;
+                                        height:100%;
+                                    }
+                                    #cthis {
+                                        width:100%;
+                                        height:100%;
+                                    }
+                                    #cthisinner{
+                                        width:80%;
+                                        margin-top:5%;
+                                    }
+                                    
+                                    #flbtm{
+                                        width:100%;
+                                        position:relative;
+                                        height:100%;
+                                        
+                                    }
+                                    #fltw{
+                                        position:fixed;
+                                        width:100%;
+                                        height:5px;
+                                        background-color:#e34e47;
+                                        bottom:0%;
+                                    }
+                                    #lform{
+                                        
+                                    }
+                                    
+                                    </style>
+                                <script>
+                                    function CreateAccount()
+                                    {
+                                        var CreateAct = {
+                                            ActData: []
+                                        };
+                                        var fname = document.getElementById('fname').value;
+                                        var lname = document.getElementById('lname').value;
+                                        
+                                        var uname = document.getElementById('uname').value;
+                                        var pwd = document.getElementById('pwd').value;
+                                        var confpwd = document.getElementById('confpwd')
+                                        
+                                        CreateAct.ActData.push({
+                                                         "FirstName": fname,
+                                                         "LastName": lname,
+                                                         "Username" : uname,
+                                                         "Password" : pwd,
+                                                         "ComfirmPassword" : confpwd
+                                                         
+                                                         })
+                                        
+                                        alert(CreateAct.ActData[0].fname);
+                                        alert(CreateAct.ActData[0].lname);
+                                        alert(CreateAct.ActData[0].uname);
+                                        alert(CreateAct.ActData[0].pwd);
+                                        alert(CreateAct.ActData[0].confpwd);
+                                        /*
+                                         */
+                                        /* uname.put("Username", un);
+                                         /pwd.put("Password", pd);
+                                         
+                                         lin.put(uname);
+                                         lin.put(pwd);
+                                         alert(lin.toString());*/
+                                        
+                                    }
+                                    </script>
+                                </head>
+    
+    <body>
+        
+        <div id="preloader">
+            <div id="status">
+                <p class="center-text">
+                <em>Loading the content...</em>
+                <em>Loading depends on your connection speed!</em>
+                </p>
+            </div>
+        </div>
+        
+        
+        <div id="cthisWrapper">
+          <div class="header-decoration"></div>
+            
+            <div class="header">
+                <a href="index.html" class="deploy-share"></a>
+                <h4>Create Account</h4>
+                <a href="#" class="deploy-menu"></a>
+                <div class="decoration"></div>
+            </div>
+            
+            Personal Info 
+            <div id="cthis">
+                <center><div align="center" style="border:1px solid grey">
+                    <div id="cthisinner">
+                        <div id="lform">
+                            
+                            <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                                <fieldset>
+                                    <span class="formValidationError" id="contactNameFieldError" style="display: none;">
+                                        <div class="small-notification red-notification">
+                                            <p>Error Sending! Please enter your name!</p>
+                                        </div>
+                                    </span>
+                                    
+                                    <span class="formValidationError" id="contactEmailFieldError" style="display: none;">
+                                        <div class="small-notification red-notification">
+                                            <p>Error Sending! Mail address required!</p>
+                                        </div>
+                                    </span>
+                                    
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactNameField" for="contactNameField">First Name:<span>(required)</span></label>
+                                        <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField">
+                                            </div>
+                                    
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactEmailField" for="contactEmailField">Last Name: <span>(required)</span></label>
+                                        <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField">
+                                            </div>
+                                    
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactEmailField" for="contactEmailField">Gender: <span>(required)</span></label>
+                                        <input type="radio" name="sex" value="male" style="display:inline">Male<span style="width:1em;display:inline;">&nbsp;</span>
+                                            <input type="radio" name="sex" value="female" style="display:inline">Female
+                                                </div>
+                                    
+                                    <div class="formFieldWrap">
+                                        <label class="field-title contactNameField" for="contactNameField">Date of Birth:<span>(required)</span></label>
+                                        
+                                    <select name="DateOfBirth_Month">
+                                        <option> - Month - </option>
+                                        <option value="January">January</option>
+                                        <option value="Febuary">Febuary</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                    
+                                    <select name="DateOfBirth_Day">
+                                        <option> - Day - </option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    
+                                    <select name="DateOfBirth_Year">
+                                        <option> - Year - </option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1951">1951</option>
+                                        <option value="1950">1950</option>
+                                        <option value="1949">1949</option>
+                                        <option value="1948">1948</option>
+                                        <option value="1947">1947</option>
+                                        <option value="1946">1946</option>
+                                        <option value="1945">1945</option>
+                                        <option value="1944">1944</option>
+                                        <option value="1943">1943</option>
+                                        <option value="1942">1942</option>
+                                        <option value="1941">1941</option>
+                                        <option value="1940">1940</option>
+                                        <option value="1939">1939</option>
+                                        <option value="1938">1938</option>
+                                        <option value="1937">1937</option>
+                                        <option value="1936">1936</option>
+                                        <option value="1935">1935</option>
+                                        <option value="1934">1934</option>
+                                        <option value="1933">1933</option>
+                                        <option value="1932">1932</option>
+                                        <option value="1931">1931</option>
+                                        <option value="1930">1930</option>
+                                        <option value="1929">1929</option>
+                                        <option value="1928">1928</option>
+                                        <option value="1927">1927</option>
+                                        <option value="1926">1926</option>
+                                        <option value="1925">1925</option>
+                                        <option value="1924">1924</option>
+                                        <option value="1923">1923</option>
+                                        <option value="1922">1922</option>
+                                        <option value="1921">1921</option>
+                                        <option value="1920">1920</option>
+                                        <option value="1919">1919</option>
+                                        <option value="1918">1918</option>
+                                        <option value="1917">1917</option>
+                                        <option value="1916">1916</option>
+                                        <option value="1915">1915</option>
+                                        <option value="1914">1914</option>
+                                        <option value="1913">1913</option>
+                                        <option value="1912">1912</option>
+                                        <option value="1911">1911</option>
+                                        <option value="1910">1910</option>
+                                        <option value="1909">1909</option>
+                                        <option value="1908">1908</option>
+                                        <option value="1907">1907</option>
+                                        <option value="1906">1906</option>
+                                        <option value="1905">1905</option>
+                                        <option value="1904">1904</option>
+                                        <option value="1903">1903</option>
+                                        <option value="1902">1902</option>
+                                        <option value="1901">1901</option>
+                                        <option value="1900">1900</option>
+                                    </select>
+                                        </div>
+                                    <br></br>
+
+                                    
+                                    
+                                    
+                                    </div>
+                                </fieldset>
+                            </form>
+                            </center>
+                            
+                            <br>
+                           
+                                
+                                Account Info 
+                                <div id="cthis">
+                                    <center><div align="center" style="border:1px solid grey">
+                                        <div id="cthisinner">
+                                            <div id="lform">
+                                                
+                                                <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                                                    <fieldset>
+                                                        <span class="formValidationError" id="contactNameFieldError" style="display: none;">
+                                                            <div class="small-notification red-notification">
+                                                                <p>Error Sending! Please enter your name!</p>
+                                                            </div>
+                                                        </span>
+                                                        <span class="formValidationError" id="contactEmailFieldError" style="display: none;">
+                                                            <div class="small-notification red-notification">
+                                                                <p>Error Sending! Mail address required!</p>
+                                                            </div>
+                                                        </span>
+                                                        <div class="formFieldWrap">
+                                                            <label class="field-title contactNameField" for="contactNameField">Email ID:<span>(required)</span></label>
+                                                            <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField">
+                                                                </div>
+                                                        <div class="formFieldWrap">
+                                                            <label class="field-title contactEmailField" for="contactEmailField">Password: <span>(required)</span></label>
+                                                            <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField">
+                                                                </div>
+                                                        <div class="formFieldWrap">
+                                                            <label class="field-title contactEmailField" for="contactEmailField">Comfirm Password: <span>(required)</span></label>
+                                                            <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField">
+                                                                </div>
+                                                        <div class="formFieldWrap">
+                                                            <label class="field-title contactEmailField" for="contactEmailField">Timezone: <span>(required)</span></label>
+                                                                
+                                                               <select> <option value="Eastern">Eastern Time</option>
+                                                                <option value="Central">Central Time</option>
+                                                                <option value="Mountain">Mountain TIme</option>
+                                                                <option value="Pacific">Pacific Time</option>
+                                                            </select>
+                                                                </div>
+                                    
+                                                        </div>
+                                            </fieldset>
+                                            </form>
+                                            
+                                            
+                                            <br>
+                                            <span>
+
+                                
+                                <a class="button grey" onclick="CreateAccount();">Create Account</a> &nbsp;</span>
+                            
+                            
+                        </div>
+                       
+               
+                            
+                <div class="decoration"></div>
+            </div>
+         <a href="#" id="up" class="icon icon-arrow-up"></a>
+        </center>
+        </div>
+        <div class="footer no-bottom">
+            <p class="center-text footer-text">
+            <br>Copyright 2013<br>All rights reseved.<br>
+            </p>
+        </div>
+
+        
+        
+        <div id="flbtm">
+            <div id="fltw">
+            </div>
+        </div>
+        </div>
+        
+    </body>
+</html>
